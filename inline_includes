@@ -34,7 +34,7 @@ def dfs(file):
 def main():
     global INCLUDE_PATHS
     INCLUDE_PATHS = sys.argv[:-1]
-    dfs(sys.argv[1])
+    dfs(sys.argv[-1])
 
 
 if __name__ == '__main__':
