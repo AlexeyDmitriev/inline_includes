@@ -10,7 +10,7 @@ INCLUDE_PATHS = None
 def include_target(file, path):
     for include_path in [os.path.dirname(file), *INCLUDE_PATHS]:
         candidate = os.path.join(include_path, path)
-        if os.path.exists(candidate):
+        if os.path.isfile(candidate):
             return candidate
     return None
 
